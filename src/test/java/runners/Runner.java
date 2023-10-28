@@ -1,15 +1,13 @@
 package runners;
-
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
-
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = "./src/test/resources/features",//path of the features folder
         glue = "stepdefinitions",//path of the stepdefinitions folder
         dryRun = false, //generate the missing step definitions only. Do not run the existing step definitions
-        tags = "@tea_pot"
+        tags = "@param_feature"
 )
 public class Runner {
 }
@@ -24,3 +22,4 @@ glue is used to give the path of the step definitions folder
 dryRun = true is used to generate missing step definitions. dryRun=false must be used for normal run.
 tags = "@iphone" is used to run specific scenarios.
  */
+
