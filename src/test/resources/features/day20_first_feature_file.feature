@@ -1,8 +1,18 @@
 Feature: google_search_feature
-  Scenario: TC01_iphone_search
+#Background is used for repeated pre- conditions
+#It executed BEFORE EACH SCENARIO KEYWORD
+  Background: navigation_google_homepage
     Given user is on the google home page
+  @iphone
+  Scenario: TC01_iphone_search
     And user search for iPhone
     Then verify the result contains iPhone
+
+  @tea_pot
+  Scenario: TC02_tea_pot_search
+    And search for porcelain tea pot
+    Then verify the result contains porcelain tea pot
+
 
 #FEATURE FILE**********************************************************************
 #  All feature files have .feature extensions
@@ -18,4 +28,5 @@ Feature: google_search_feature
 #  Use Runner to generate the missing step definitions
 #  Use the templates and add them in your step definitions folder
 #  Then complete your java code using page object model
-
+#  @tags are used to run specific test scenarios. we can use multiple tags
+# Background is used for repeated pre conditions. It runs before each Scenario keyword.for repeated pre conditions. It runs before each Scenario keyword.
