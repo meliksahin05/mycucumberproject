@@ -1,12 +1,14 @@
 package stepdefinitions;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.apache.hc.core5.util.Asserts;
 import org.junit.Assert;
 import pages.BlueRentalLoginPage;
 import java.util.List;
 import static utilities.WaitUtils.waitFor;
 public class BlueRentalStepDefs {
-    BlueRentalLoginPage blueRentalLoginPage = new BlueRentalLoginPage();
+     BlueRentalLoginPage blueRentalLoginPage = new BlueRentalLoginPage();
+
     @When("user enters the admin email and password")
     public void user_enters_the_admin_email_and_password(io.cucumber.datatable.DataTable dataTable) {
         List<String> credentials = dataTable.row(1);//index starts at 0
