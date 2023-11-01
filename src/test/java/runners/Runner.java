@@ -13,9 +13,9 @@ import org.junit.runner.RunWith;
         },
         monochrome = true,//makes the console reports more readable
         features = "./src/test/resources/features",//path of the features folder
-        glue = "stepdefinitions",//path of the stepdefinitions folder
+        glue = {"stepdefinitions", "hooks"},//path of the stepdefinitions folder
         dryRun = false, //generate the missing step definitions only. Do not run the existing step definitions
-        tags = "@data_tables"
+        tags = "@failed"
 )
 public class Runner {
 }
