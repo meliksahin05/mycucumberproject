@@ -1,4 +1,4 @@
-@scenario_outline_2
+@scenario_outline_2 @regression
 Feature: data_tables_features
   Scenario Outline: user creation test
     Given user navigates to "https://editor.datatables.net/"

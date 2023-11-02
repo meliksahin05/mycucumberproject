@@ -1,3 +1,4 @@
+@smoke
 Feature: google_search_feature
 #Background is used for repeated pre- conditions
 #It executed BEFORE EACH SCENARIO KEYWORD

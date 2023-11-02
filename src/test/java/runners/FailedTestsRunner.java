@@ -17,5 +17,5 @@ import org.junit.runner.RunWith;
         glue = "stepdefinitions",
         dryRun = false
 )
-public class FailedTestRunner {
+public class FailedTestsRunner {
 }
