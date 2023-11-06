@@ -11,12 +11,13 @@ import org.junit.runner.RunWith;
                 "junit:target/xml-reports/cucumber.xml",
                 "rerun:target/failedRerun.txt",
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+
         },
         monochrome = true,//makes the console reports more readable
         features = "./src/test/resources/features",//path of the features folder
         glue = {"stepdefinitions", "hooks"},//path of the stepdefinitions folder
         dryRun = false, //generate the missing step definitions only. Do not run the existing step definitions
-        tags = "@data_tables"
+        tags = "@param_feature"
 )
 public class Runner {
 }
