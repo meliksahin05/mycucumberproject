@@ -2,9 +2,12 @@ package stepdefinitions;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import org.junit.Assert;
 import utilities.DBUtils;
 
 import java.sql.SQLException;
+import java.util.List;
 
 public class DBStepDefs {
 
@@ -48,6 +51,16 @@ public class DBStepDefs {
         System.out.println("There are "+rowNum +" data in this column "+column);
 
 
+    }
+
+    @Then("verify table {string} and column {string} contains data {string}")
+    public void verify_table_and_column_contains_data(String table, String column, String data ) {
+        //        get the column names
+//        store in a list
+        List<Object> allColumnData = DBUtils.getColumnData("select "+column+" from "+table+"",column);
+        System.out.println(allColumnData);
+//        assert if that list contains the given data
+        Assert.assertTrue(allColumnData.contains(data));
     }
  }
 

@@ -16,7 +16,7 @@ import org.junit.runner.RunWith;
         features = "./src/test/resources/features",//path of the features folder
         glue = "stepdefinitions",//path of the stepdefinitions folder
         dryRun = false, //generate the missing step definitions only. Do not run the existing step definitions
-        tags = "@user_login"
+        tags = "@validate_customer_city"
 )
 public class DBRunner {
 }
