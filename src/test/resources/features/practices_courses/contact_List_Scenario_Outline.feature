@@ -1,4 +1,4 @@
-@contact_list
+@contact_list_scenario_outline
 Feature: User can open an account and add contacts
 
   Scenario: Open account
