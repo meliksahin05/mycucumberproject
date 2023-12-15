@@ -17,4 +17,19 @@ public class MedunnaHomePage {
     public WebElement patientOption;
     @FindBy(xpath = "//span[.='Register']")
     public WebElement registerOption;
+
+    @FindBy(id = "username")
+    public WebElement username;
+
+    @FindBy(id = "password")
+    public WebElement password;
+
+    @FindBy(xpath = "//button[@type='submit']")
+    public WebElement getSignInButton;
+
+
+    @FindBy(id = "rememberMe")
+    public WebElement rememberMe;
+
+
 }
